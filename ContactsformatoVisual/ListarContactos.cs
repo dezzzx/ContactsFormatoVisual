@@ -111,7 +111,7 @@ namespace ContactsformatoVisual
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Inicio inicio = new Inicio();
+            Home inicio = new Home();
             inicio.Show();
             this.Hide();
         }

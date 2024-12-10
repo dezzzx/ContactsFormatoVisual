@@ -89,8 +89,8 @@ namespace ContactsformatoVisual
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Inicio inicio = new Inicio();
-            Inicio.ActualizarContactos(nombres, telefonos, indiceActual);
+            Home inicio = new Home();
+            Home.ActualizarContactos(nombres, telefonos, indiceActual);
             inicio.Show();
             this.Hide();
         }

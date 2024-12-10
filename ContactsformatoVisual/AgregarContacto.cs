@@ -82,8 +82,8 @@ namespace ContactsformatoVisual
                 indiceActual++;
 
                 MessageBox.Show("Contacto agregado exitosamente.");
-                Inicio inicio = new Inicio();
-                Inicio.ActualizarContactos(nombres, telefonos, indiceActual);
+                Home inicio = new Home();
+                Home.ActualizarContactos(nombres, telefonos, indiceActual);
                 inicio.Show();
                 this.Hide();
                 
@@ -96,7 +96,7 @@ namespace ContactsformatoVisual
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Inicio inicio1 = new Inicio();
+            Home inicio1 = new Home();
             inicio1.Show();
             this.Hide();
         }
