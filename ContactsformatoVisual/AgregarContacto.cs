@@ -75,18 +75,25 @@ namespace ContactsformatoVisual
                 MessageBox.Show("Por favor, ingrese tanto el nombre como el teléfono.");
                 return;
             }
-            if (indiceActual < 100) 
-            {
-                nombres[indiceActual] = nombre; 
-                telefonos[indiceActual] = telefono;
-                indiceActual++;
 
-                MessageBox.Show("Contacto agregado exitosamente.");
-                Home inicio = new Home();
-                Home.ActualizarContactos(nombres, telefonos, indiceActual);
-                inicio.Show();
-                this.Hide();
-                
+            if (indiceActual < 100 ) 
+            {
+                if (textBox2.Text.Length == 9)
+                {
+                    nombres[indiceActual] = nombre;
+                    telefonos[indiceActual] = telefono;
+                    indiceActual++;
+
+                    MessageBox.Show("Contacto agregado exitosamente.");
+                    Home inicio = new Home();
+                    Home.ActualizarContactos(nombres, telefonos, indiceActual);
+                    inicio.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("El numero tiene que tener 9 digitos");
+                }
             }
             else
             {
