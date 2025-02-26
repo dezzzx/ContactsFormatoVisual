@@ -12,6 +12,7 @@ namespace ContactsformatoVisual
 {
     public partial class Home : Form
     {
+        // Donde se guardaran los datos
         static string[] nombres = new string[100];
         static string[] telefonos = new string[100];
         static int indiceActual = 0;
